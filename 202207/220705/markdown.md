@@ -110,15 +110,14 @@ print('hello')
 ![](C:\Users\hphk\Desktop\hphk.png)
 
 * 아래의 이미지는 나오지 않음. 
-  * 절대경로 (C드라이브 ~)
+  * 절대경로 (C:\Users\hphk\Desktop\water bomb.jpg)
 
-![bonobono](C:\Users\hphk\Desktop\bonobono.png)
+![워터밤](C:\Users\hphk\Desktop\water bomb.jpg)
 
 * 아래의 이미지는 나옴
-  * 상대경로
-  * 마크다운.assets 폴더를 같이 공유하면!
+  * 상대경로 (./water bomb.jpg)
 
-![bonobono](마크다운.assets/bonobono.png)
+![워터밤](./water bomb.jpg)
 
 ## 인용문
 
