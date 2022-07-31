@@ -4,7 +4,7 @@
 
 ---
 
-### [Algorithm](./algorithm/README.md)
+### [Algorithm](./Algorithm/README.md)
 
 > 2022년 7월 25일 (월) ~ 2022년 8월 12일 (목)
 
