@@ -4,6 +4,7 @@ C = []
 for i in range(B):
     for ii in range(i):
         C.append(i)
+        
 print(sum(C[A-1:B]))
 
 

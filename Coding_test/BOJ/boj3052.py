@@ -12,4 +12,3 @@ for i in range(0,10):
     if B not in C:
         C.append(B)
 print(len(C))
-    
