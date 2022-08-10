@@ -1,6 +1,6 @@
 > ## 2022년 8월 08일(월)
 >
-> 알고리즘03- 완전탐색 I (Exhaustive Search)
+> 알고리즘03 - 완전탐색 I (Exhaustive Search)
 
 
 
