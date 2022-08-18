@@ -2,6 +2,9 @@
 
 
 
+> ### [2022년 8월 18일(목)](./220818/README.md)
+>
+> > 데이터베이스! 기본함수, GROUP BY, ALTER TABLE
 >  ### [2022년 8월 17일(수)](./220817/README.md)
 >
 > > 데이터베이스! INSERT, SELECT, WHERE, LIKE, ORDER BY
