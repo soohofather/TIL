@@ -17,5 +17,21 @@ while True:
                     counting[sentence[i]] = 1
     except EOFError:
         break
-counting.sorted()
-print(counting)
+
+new_counting = sorted(counting.items(), key=lambda x: x[1], reverse=True)
+
+result = ""
+
+for ii in range(len(new_counting)):
+    if ii == 0:
+        result += new_counting[ii][0]
+    else:
+        if new_counting[ii][1] == new_counting[0][1]:
+            result += new_counting[ii][0]
+        else:
+            break
+
+new_result = sorted(result)
+
+for iii in new_result:
+    print(iii, end="")
