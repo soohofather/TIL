@@ -90,12 +90,13 @@
 
       
 
+    
         return render(request, 'index.html', context)
-
+    
     - \<img src="{{ img }}">
-
+    
     - path('welcome/\<name>', views.welcome),
-
+    
       welcome은 함수이름
 
 ​	
