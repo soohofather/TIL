@@ -401,3 +401,164 @@
 
 ## Django ModelForm
 
+### 1. ModelForm을 이용한 Create
+
+1. Forms.py를 생성 후 함수 정의
+
+   ```python
+   from django import forms
+   from .models import Article
+   
+   
+   class ArticleForm(forms.ModelForm):
+       class Meta:
+           model = Article
+           fields = ["title", "content"]
+   
+   ```
+
+2. veiws.py 에서 글쓰기 페이지에 내용추가
+
+   ```python
+   from .forms import ArticleForm
+   
+   def create(request):
+   
+       article_form = ArticleForm()
+   
+       context = {
+           "article_form": article_form,
+       }
+   
+       return render(request, "appcsrf/create.html", context)
+   ```
+
+3. create.html 에서 기존 글쓰는 칸은 없애고, `{% csrf_token %}`, `{{ article_form.as_p }}` 넣음
+
+   ```html
+   <body>
+   
+     <h1>글쓰기 페이지</h1>
+   
+     <form action="{% url 'appcsrf:new' %}" method="POST">
+       {% csrf_token %}
+       {{ article_form.as_p }}
+     
+       <input type="submit" value="글쓰기">
+     </form>
+     
+   </body>
+   ```
+
+4. views.py에서 메서드가 GET에서 POST로 바뀌어 전달온 것을 저장하는 것으로 바꿈
+
+   - 수정 전
+
+   ```html
+   def new(request):
+   
+       title = request.GET.get("title")
+       content = request.GET.get("content")
+   
+       Article.objects.create(title=title, content=content)
+   
+   	return redirect("appcsrf:index")
+   ```
+
+   - 수정 후
+
+   ```html
+   def new(request):
+   
+       if request.method == "POST":
+           # DB에 저장하는 로직
+           article_form = ArticleForm(request.POST)
+           if article_form.is_valid():
+               article_form.save()
+               return redirect("appcsrf:index")
+       else:
+           article_form = ArticleForm()
+       context = {
+           "article_form": article_form,
+       }
+       return render(request, "appcsrf/create.html", context=context)
+   
+   ```
+
+### 2. ModelForm을 이용한 Update
+
+1. views.py에서 수정
+
+   - 수정 전
+
+   ```python
+   def update(request, pk):
+   
+       old_post = Article.objects.get(pk=pk)
+   
+       context = {
+           "old_post": old_post,
+   
+       }
+       
+       return render(request, "appcsrf/update.html", context)
+       
+   
+   def newupdate(request, pk):
+   
+       new_update = Article.objects.get(pk=pk)
+   
+       title = request.GET.get("title")
+       content = request.GET.get("content")
+   
+       new_update.title = title
+       new_update.content = content
+       new_update.save()
+   
+       return redirect("appcsrf:index")
+   ```
+
+   - 수정 후
+
+   ```python
+   def update(request, pk):
+   
+       # old_post = Article.objects.get(pk=pk)
+   
+       # context = {
+       #     "old_post": old_post,
+   
+       # }
+   
+       article = Article.objects.get(pk=pk)
+       if request.method == "POST":
+           # POST : input 값 가져와서, 검증하고, DB에 저장
+           article_form = ArticleForm(request.POST, instance=article)
+           if article_form.is_valid():
+               # 유효성 검사 통과하면 저장하고, 상세보기 페이지로
+               article_form.save()
+               return redirect("appcsrf:detail", article.pk)
+           # 유효성 검사 통과하지 않으면 => context 부터해서 오류메시지 담긴 article_form을 랜더링
+       else:
+           # GET : Form을 제공
+           article_form = ArticleForm(instance=article)
+       context = {
+           "article_form": article_form,
+       }
+       return render(request, "appcsrf/update.html", context)
+   
+   # def newupdate(request, pk):
+   
+   #     new_update = Article.objects.get(pk=pk)
+   
+   #     title = request.GET.get("title")
+   #     content = request.GET.get("content")
+   
+   #     new_update.title = title
+   #     new_update.content = content
+   #     new_update.save()
+   
+   #     return redirect("appcsrf:index")
+   ```
+
+   
