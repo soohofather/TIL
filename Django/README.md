@@ -3,6 +3,9 @@
 
 
 > 
+> ### [2022년 10월 5일(수)](./221005/README.md)
+>
+> > Django08!  Admin site, Static files
 > ### [2022년 10월 4일(화)](./221004/README.md)
 >
 > > Django07!  CRUD 복습 및 Django ModelForm
