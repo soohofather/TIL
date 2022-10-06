@@ -36,7 +36,7 @@
 
 ```python
 class ArticleAdmin(admin.ModelAdmin):
-    fields = ["title", "created_at", "updated_at"]
+    list_display = ["title", "created_at", "updated_at"]
 
 
 admin.site.register(Article, ArticleAdmin)
@@ -48,7 +48,7 @@ admin.site.register(Article, ArticleAdmin)
 
 - 클릭하면 아래와 같이 내용도 볼수 있음.
 
-![image-20221006081403867](assets/image-20221006081403867.png)
+![image-20221006100915724](assets/image-20221006100915724.png)
 
 
 
