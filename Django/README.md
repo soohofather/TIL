@@ -3,6 +3,9 @@
 
 
 > 
+> ### [2022년 10월 6일(목)](./221006/README.md)
+>
+> > Django09!  ModelForm / Staticfiles을 이용한 실습
 > ### [2022년 10월 5일(수)](./221005/README.md)
 >
 > > Django08!  Admin site, Static files
