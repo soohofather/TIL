@@ -3,9 +3,12 @@
 
 
 > 
+> ### [2022년 10월 11일(화)](./221011/README.md)
+>
+> > Django09!  Authentication(인증)과 Authorization(권한) 그리고 회원가입
 > ### [2022년 10월 6일(목)](./221006/README.md)
 >
-> > Django09!  ModelForm / Staticfiles을 이용한 실습
+> > Django08-2!  ModelForm / Staticfiles을 이용한 실습
 > ### [2022년 10월 5일(수)](./221005/README.md)
 >
 > > Django08!  Admin site, Static files
