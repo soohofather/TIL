@@ -1,6 +1,6 @@
 # 2022년 10월 6일 (목)
 
-> Django09!  ModelForm / Staticfiles을 이용한 실습
+> Django08-2!  ModelForm / Staticfiles을 이용한 실습
 
 
 
