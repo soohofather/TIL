@@ -3,6 +3,9 @@
 
 
 > 
+> ### [2022년 10월 12일(수)](./221012/README.md)
+>
+> > Django10!  로그인과 로그아웃
 > ### [2022년 10월 11일(화)](./221011/README.md)
 >
 > > Django09!  Authentication(인증)과 Authorization(권한) 그리고 회원가입
