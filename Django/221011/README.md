@@ -1,4 +1,4 @@
-# 2022년 10월 11일 (목)
+# 2022년 10월 11일 (화)
 
 > Django09!  Authentication(인증)과 Authorization(권한) 그리고 회원가입
 
