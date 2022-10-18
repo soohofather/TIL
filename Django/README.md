@@ -5,7 +5,7 @@
 > 
 > ### [2022년 10월 18일(화)](./221018/README.md)
 >
-> > Django13! 댓글 작성 및 삭제 , 댓글 갯수 표시
+> > Django13! 댓글 작성 (1 : N, one to many relationship)
 > ### [2022년 10월 17일(월)](./221017/README.md)
 >
 > > Django12! 이미지파일 업로드 
