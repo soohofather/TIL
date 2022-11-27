@@ -1,14 +1,22 @@
 # 👊 수호아빠의 개발자가 되어가는 과정 (with.멀티캠퍼스)
 
----
 
-### [Semi Project 2](./Semi_Project_2/README.md)
-
-> 2022년 11월 09일 (수) ~ 2022년 11월 21일 (월) 
 
 ---
 
-### [Semi Project 1](./Semi_Project_1/README.md)
+### [Final Project](./Final_Project/README.md) - Current Mood
+
+> 2022년 11월 24일 (목) ~ 2022년 12월 14일 (수)
+
+---
+
+### [Semi Project 2](./Semi_Project_2/README.md) - Chicken-Kurly
+
+> 2022년 11월 09일 (수) ~ 2022년 11월 21일 (월)
+
+---
+
+### [Semi Project 1](./Semi_Project_1/README.md) - Golden-Balloon
 
 > 2022년 10월 31일 (수) ~ 2022년 11월 07일 (월)
 
