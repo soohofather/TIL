@@ -1,8 +1,8 @@
 # 백준 11659번 : 구간 합 구하기 4
 
-![image-20221224202323667](C:\Users\enthc\AppData\Roaming\Typora\typora-user-images\image-20221224202323667.png)
+![image-20221224203410274](assets/image-20221224203410274.png)
 
-![image-20221224202336762](C:\Users\enthc\AppData\Roaming\Typora\typora-user-images\image-20221224202336762.png)
+![image-20221224203427817](assets/image-20221224203427817.png)
 
 
 
